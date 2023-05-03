@@ -1,0 +1,75 @@
+<html>
+<head>
+<title> Ride Request </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor=#a3d2dc class="fade-in-image">
+<center>
+   <img src="photo1683054744.jpeg" width="300px" class="fade-in-image">
+	 <h1> E-DRIVE APP</h1>
+</center>
+<h2> Our Avaliable Captains </h2>
+<center>
+<div>
+<img src="1.jpg" width="200px" height="200px">
+<h4> Name: Mohammed </h4>
+<h4> Car : Chevrolet Lanos </h4>
+<h4> Color : Black </h4>
+<h4> Number : 4567 </h4>
+<h4> Rate : 4.6 </h4>
+<center><button class="button" onClick="requestcap()"> Request Now </button></center>
+</div>
+<div>
+<img src="2.jpg" width="200px" height="200px">
+<h4> Name: Yasser </h4>
+<h4> Car : Renou Logan </h4>
+<h4> Color : Black </h4>
+<h4> Number : 4987 </h4>
+<h4> Rate : 4.0 </h4>
+<center><button class="button" onClick="requestcap()"> Request Now </button></center>
+</div>
+<div>
+<img src="3.jpg" width="200px" height="200px">
+<h4> Name: Moustafa </h4>
+<h4> Car : Chevrolet Optra </h4>
+<h4> Color : Blue </h4>
+<h4> Number : 5689 </h4>
+<h4> Rate : 5.0 </h4>
+<center><button class="button" onClick="requestcap()"> Request Now </button></center>
+</div>
+<div>
+<img src="4.jpg" width="200px" height="200px">
+<h4> Name: Ali </h4>
+<h4> Car : Toyota Corolla </h4>
+<h4> Color : Silver </h4>
+<h4> Number : 3278 </h4>
+<h4> Rate : 3.0 </h4>
+<center><button class="button" onClick="requestcap()"> Request Now </button></center>
+</div>
+<div>
+<img src="5.jpg" width="200px" height="200px">
+<h4> Name: Ahmed </h4>
+<h4> Car : Nissan Sunny </h4>
+<h4> Color : Red </h4>
+<h4> Number : 2679 </h4>
+<h4> Rate : 5.0 </h4>
+<center><button class="button" onClick="requestcap()"> Request Now </button></center>
+</div> <br>
+<h2> Your current location </h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+ width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center>
+<script>
+function requestcap() {
+  let text;
+  let person = prompt("Please enter your number:", "");
+  if (person == null || person == "") {
+    text = "Request cancelled.";
+  } else {
+    text = "Hello, your phone number " + person + "! was sent to the captain";
+  }
+  alert(text);
+}
+</script>
+</body>
+</html>
